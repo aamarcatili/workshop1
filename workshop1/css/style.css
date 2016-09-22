@@ -1,23 +1,36 @@
 .container{
 	max-width: 900px;
 	width: 100%;
-	overflow: auto;
+	overflow: hidden;
 	padding-top: 30px;
 	padding-bottom: 30px;
 	margin: 0 auto;
 }
+nav ul{
+		float: none;
+		width: 99%;
+	}
 
+
+	nav ul li{
+		display: inline-block;
+		margin-left: 1px;
+		padding: 1px; 
+	}
+
+	nav ul li a{
+		font-size: 15px;
+		font-weight: 700;
+	}
 
 nav{
 	background: #2B3E4F;
 }
 
 nav .logo{
-	float: left;
+	float: right;
 	display: inline-block;
-	/*font-family: 'Montserrat', sans-serif;
-	text-transform: uppercase;
-	color: white;*/
+	margin: 10px;
 	font-weight: 700;
 	font-size: 25px;
 }
@@ -134,16 +147,17 @@ section div ul li{
 	width: 300px;
 	height: 200px;
 }*/
-article{
+.art article{
 	cursor: pointer;
 	width: 30%;
 	float: left;
 	margin: 10px;
 	box-sizing: border-box;
 	position: relative;
+	left: 50px;
 }
 
-article img{
+.art article img{
 	width: 100%;
 	/*width: 280px;
 	height: 200px;*/
@@ -163,7 +177,7 @@ article img{
     transition: 1s;
 }
 
-article:hover .box{
+.art article:hover .box{
 	opacity: 1;
 }
 
@@ -291,21 +305,53 @@ footer p{
 }
 
 
-@media screen and (max-width: 320px){
+@media screen and (max-width: 360px){
 
 	.container {
-	    max-width: 320px;
+	    max-width: 360px;
 	    width: 100%;
-	    overflow: auto;
+	    overflow: hidden;
 	    padding-top: 10px;
 	    padding-bottom: 10px;
 	    padding-left: 5px;
 	    padding-right: 5px;
-	    margin: 0 auto;
+	    margin: 10px auto;
 	    box-sizing: border-box;
 	}
+	.container h1 {
+		font-size:48px;
+	}
+	.cointainer article {
+		position: relative;
+		left: 50px;
+	}
+	
+ 	.texto-encolumnado .hide {
+		display: none;
+	}
+	.texto-encolumnado .white {
+		width:100%;
+	}
+	.container .address{
+	width: 100%;
+	display: inline-block;
+	text-align: center; 
+}
+	.socialmedia .montserrat-white {
+		width: 100%;
+		display: inline;
+		text-align: center;
+		margin: 25px 0;
 
-
+	}
+	.socialmedia .hide {
+		display: none;
+	}
+	.container .socialmedia {
+		width: 100%;
+		text-align: center;
+		display: inline-block;
+	}
 	nav .logo{
 		float: none;
 		display: inline-block;
@@ -316,26 +362,140 @@ footer p{
 		width: 99%;
 		font-size: 15px;
 	}
-<<<<<<< HEAD
+ 	.socialmedia ul li {
+ 		margin-top: 30px;
+ 	}
+ 	.adress .white{
+ 		margin: 30px;
+ 	}
+}
+	@media screen and (max-width: 560px){
 
-	nav ul{
-		float: none;
-		width: 99%;
+	.container {
+	    max-width: 560px;
+	    width: 100%;
+	    overflow: hidden;
+	    padding-top: 10px;
+	    padding-bottom: 10px;
+	    padding-left: 5px;
+	    padding-right: 5px;
+	    margin: 10px auto;
+	    box-sizing: border-box;
 	}
+	.cointainer article {
+		position: relative;
+		left: 50px;
+	}
+	
+ 	.texto-encolumnado .hide {
+		display: none;
+	}
+	.texto-encolumnado .white {
+		width:100%;
+	}
+	.container .address{
+	width: 100%;
+	display: inline-block;
+	text-align: center; 
+}
+	.socialmedia .montserrat-white {
+		width: 100%;
+		display: inline;
+		text-align: center;
+		margin: 25px 0;
 
-
-	nav ul li{
+	}
+	.socialmedia .hide {
+		display: none;
+	}
+	.container .socialmedia {
+		width: 100%;
+		text-align: center;
 		display: inline-block;
-		margin-left: 1px;
-		padding: 1px; 
 	}
-
-	nav ul li a{
-		font-size: 15px;
+	nav .logo{
+		float: none;
+		display: inline-block;
+		/*font-family: 'Montserrat', sans-serif;
+		text-transform: uppercase;
+		color: white;*/
 		font-weight: 700;
+		width: 99%;
+		font-size: 15px;
+	}
+ 	.socialmedia ul li {
+ 		margin-top: 30px;
+ 	}
+ 	.adress .white{
+ 		margin: 30px;
+ 	}
+	
+}
+@media screen and (max-width: 899px){
+
+	.container {
+	    max-width: 899px;
+	    width: 100%;
+	    overflow: hidden;
+	    padding-top: 10px;
+	    padding-bottom: 10px;
+	    padding-left: 5px;
+	    padding-right: 5px;
+	    margin: 10px auto;
+	    box-sizing: border-box;
+	}
+	.cointainer article {
+		position: relative;
+		left: 50px;
+	}
+	
+ 	.texto-encolumnado .hide {
+		display: none;
+	}
+	.texto-encolumnado .white {
+		width:100%;
+	}
+	.container .address{
+	width: 100%;
+	display: inline-block;
+	text-align: center; 
+}
+	.socialmedia .montserrat-white {
+		width: 100%;
+		display: inline;
+		text-align: center;
+		margin: 25px 0;
+
+	}
+	.socialmedia .hide {
+		display: none;
+	}
+	.container .socialmedia {
+		width: 100%;
+		text-align: center;
+		display: inline-block;
+	}
+	nav .logo{
+		float: none;
+		display: inline-block;
+		/*font-family: 'Montserrat', sans-serif;
+		text-transform: uppercase;
+		color: white;*/
+		font-weight: 700;
+		width: 99%;
+		font-size: 15px;
+	}
+ 	.socialmedia ul li {
+ 		margin-top: 30px;
+ 	}
+ 	.adress .white{
+ 		margin: 30px;
+ 	}
+	.art article {
+		position:relative;
+		left:10px;
+	}
+	.container .izquierda{
+		margin-left: 10px;
 	}
 }
-=======
-}
-/* Agregado por MVEGA*/
->>>>>>> 7eb1603aaf3a3d80650b7f58ea66da7ee18eb834
